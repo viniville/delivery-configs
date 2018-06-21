@@ -12,7 +12,14 @@ eureka:
       defaultZone: http://${eureka.instance.hostname}:${eureka.instance.port}/eureka/
   server:
     wait-time-in-ms-when-sync-empty: 3000
-
+    
+zuul:
+  routes:
+    orders:
+      path: /api/orders/**
+      serviceId: ORDER-SERVICE
+      stripPrefix: false
+      
 #authserver:
 #  hostname: http://localhost:9092
 #security:
