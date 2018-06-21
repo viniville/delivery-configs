@@ -21,10 +21,12 @@ zuul:
       path: /orders/**
       serviceId: delivery-order-service
       strip-prefix: false
+      sensitive-headers: Cookie,Set-Cookie
     payments:
       path: /payments/**
       serviceId: delivery-payments-service
       strip-prefix: false   
+      sensitive-headers: Cookie,Set-Cookie
       
 #authserver:
 #  hostname: http://localhost:9092
