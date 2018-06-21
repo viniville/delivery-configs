@@ -14,8 +14,8 @@ eureka:
     wait-time-in-ms-when-sync-empty: 3000
     
 zuul:
-  prefix=/api
-  ignored-services=*
+  prefix: /api
+  ignored-services: '*'
   routes:
     orders:
       path: /orders/**
