@@ -14,11 +14,17 @@ eureka:
     wait-time-in-ms-when-sync-empty: 3000
     
 zuul:
+  prefix=/api
+  ignored-services=*
   routes:
     orders:
-      path: /api/orders/**
-      serviceId: DELIVERY-ORDER-SERVICE
-      stripPrefix: false
+      path: /orders/**
+      serviceId: delivery-order-service
+      strip-prefix: false
+    payments:
+      path: /payments/**
+      serviceId: delivery-payments-service
+      strip-prefix: false   
       
 #authserver:
 #  hostname: http://localhost:9092
