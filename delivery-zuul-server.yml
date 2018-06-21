@@ -17,7 +17,7 @@ zuul:
   routes:
     orders:
       path: /api/orders/**
-      serviceId: delivery-order-service
+      serviceId: DELIVERY-ORDER-SERVICE
       stripPrefix: false
       
 #authserver:
