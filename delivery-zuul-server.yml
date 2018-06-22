@@ -27,7 +27,12 @@ zuul:
       serviceId: delivery-payments-service
       strip-prefix: false   
       sensitive-headers: Cookie,Set-Cookie
-      
+    creditcards:
+      path: /creditcards/**
+      serviceId: delivery-payments-service
+      strip-prefix: false   
+      sensitive-headers: Cookie,Set-Cookie
+
 #authserver:
 #  hostname: http://localhost:9092
 #security:
