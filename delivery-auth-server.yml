@@ -21,7 +21,7 @@ security:
             client-id: coderef
             client-secret: $2a$10$p9Pk0fQNAQSesI4vuvKA0OZanDD2
             resource-ids: resources
-            scope: read,write
+            scope: read
 
 spring:
     datasource:
